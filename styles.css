@@ -1,38 +1,113 @@
 body{
-    background-color: #333333;
+    font-family: 'Helvetica', sans-serif;
     margin: 0px;
+    padding:0px;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
 }
 
-#box{
+#container{
+    background: linear-gradient(to bottom,#333333, #000000);
+    height: 100vh;
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#wrapper1{
+    margin-left: 10%;
+    margin-top: 50px;
+}
+#wrapper2{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+#intro{
+    font-size: 50px;
+}
+
+#phone-case{
     background-color: grey;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 500px;
-    width: 250px;
-    border-radius: 15px;
+    width: 260px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 3px 2px 5px grey;
 }
 
-#screen{
-    background-color: white;
+
+#phone-screen{
     background-image: url("screenSaver2.jpg");
     background-size: cover;
+    border: solid black 5px;
     height: 480px;
     width: 240px;
-    border-radius: 10px;
+    border-radius: 25px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5px;
 }
 
-#topscreen{
+#phone-case:hover {
+    transform: scale(1.1);
+}
+
+
+#phone-screen-sub{
+
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color:blueviolet;
+    display:flex;
+    flex-direction: column;
+    align-items:center ;
+
+}
+
+#time-display{
+    font-size: xx-large;
+    background-color:white ;
+    margin-bottom: 1em;
+}
+
+.notifications{
+    margin-bottom: -15px;
+    margin-top: 20px;
+    background-color: lightgrey;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    opacity: .8;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.notifications:hover{
+    background-color: #333333;
+    box-shadow: 2px 2px 2px black;
+    opacity: .9;
+}
+
+#unlock-message{
+
+}
+
+
+#phone-camera{
     background-color: grey;
     height:10px;
     width: 80px;
     border-radius: 3px;
+    margin:0;
+    padding: 0;
 }
-    
+
 
